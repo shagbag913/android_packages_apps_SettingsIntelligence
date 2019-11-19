@@ -171,6 +171,7 @@ public class SearchFragment extends Fragment implements SearchView.OnQueryTextLi
         mSearchView = toolbar.findViewById(R.id.search_view);
         mSearchView.setQuery(mQuery, false /* submitQuery */);
         mSearchView.setOnQueryTextListener(this);
+        mSearchView.setQueryHint("");
         mSearchView.requestFocus();
 
         return view;
